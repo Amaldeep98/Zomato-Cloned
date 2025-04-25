@@ -12,6 +12,7 @@ body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    display: flex;
 }
 .videos{
     height: 100%;
@@ -44,7 +45,7 @@ body{
 .buttons{
     
         position: absolute;
-        top:45%;
+        top:50%;
         left: 50%;
         width: 50%;
         transform: translate(-50%, 50%);
@@ -57,53 +58,121 @@ body{
 }
 .button-span{
     display: inline-block;
-    margin-right: 15px; /* space between images */
+    margin-right: 15px; 
 }
 .play{
     height: 30%;
     cursor: pointer;
 }
-
+.ord-text{
+    font-family: sans-serif;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    font-size: 35px;
+    color: aliceblue;
+}
+.scroll{
+    font-family: sans-serif;
+    position: absolute;
+    top: 99%;
+    font-size: 20px;
+    font-weight: 550;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    
+}
+.scroll-text{
+}
+.scroll-img{
+    height: 10px;
+    
+}
 @media only screen and (max-width: 400px) {
     /* Mobile */
     .zomato-no1{
-        top: 60%;
-        font-size: 40px;
+        top: 50%;
+        font-size: 30px;
         font-weight: 900;
     } 
     .buttons{
         position: absolute;
-        top:62%;
+        top:60%;
         left: 50%;
         height: 20%;
     }
+    .ord-text{
+        font-family: sans-serif;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        font-size: 20px;
+        color: aliceblue;
+        font-weight: 550;
+    
+    }
+    
     
 }
 
 @media only screen and (min-width:400px) and (max-width:1200px) and (orientation: portrait) {
     /* Tablet potrait */
     .zomato-no1{
-        top: 60%;
+        top: 52%;
         font-size: 40px;
         font-weight: 900;
     } 
     .buttons{
         position: absolute;
-        top: 52%;
+        top: 63%;
         height: 20%;
     }
+    .ord-text{
+        font-family: sans-serif;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        font-size: 35px;
+        font-weight: 550;
+        color: aliceblue;
+    
+    }
+    
     
 }
 @media only screen and (min-width:400px) and (max-width:1200px) and (orientation: Landscape) {
     /* Tablet landscape */
     .zomato-no1{
-        top: 60%;
+        top: 55%;
         font-size: 40px;
         font-weight: 900;
     } 
     .buttons{
         height: 20%;
         position: absolute;
-        top: 65%;
+        top: 72%;
+    }
+    .ord-text{
+        font-family: sans-serif;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        font-size: 20px;
+        font-weight: 550;
+        color: aliceblue;
+    
     }
 }
